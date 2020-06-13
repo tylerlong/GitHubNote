@@ -6,7 +6,8 @@
   },
   "dependencies": {
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "subx": "^0.9.7"
   },
   "devDependencies": {
     "@types/node": "^14.0.13",

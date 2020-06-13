@@ -1,8 +1,12 @@
 import react from 'react';
+import { ProxyObj } from 'subx/build/types';
 
-class App extends react.Component {
+export interface Props { store: ProxyObj; }
+
+class App extends react.Component<Props> {
   render() {
-    return 'Hello world';
+    const store = this.props.store;
+    return store.hello;
   }
 }
 
