@@ -1,17 +1,16 @@
 {
-  "devDependencies": {
-    "gts": "^2.0.2",
-    "yarn-upgrade-all": "^0.5.2",
-    "typescript": "^3.8.3",
-    "@types/node": "^13.11.1"
-  },
+  "license": "MIT",
   "scripts": {
-    "check": "gts check",
-    "clean": "gts clean",
-    "compile": "tsc",
-    "fix": "gts fix",
-    "prepare": "yarn run compile",
-    "pretest": "yarn run compile",
-    "posttest": "yarn run check"
+    "start": "webpack-dev-server --progress --colors"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.13",
+    "gts": "^2.0.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "yarn-upgrade-all": "^0.5.2"
   }
 }
