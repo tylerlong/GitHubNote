@@ -27,7 +27,7 @@ const config: webpack.Configuration = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'GitHub Note',
+      title: 'GitHubNote',
     }),
   ],
   resolve: {

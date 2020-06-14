@@ -1,6 +1,6 @@
-# github-note
+# GitHubNote
 
-GitHub Note, note taking app like Evernote, powered by GitHub.
+GitHubNote, note taking app like Evernote and YoudaoNote, powered by GitHub API.
 
 
 ## Notes

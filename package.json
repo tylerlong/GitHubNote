@@ -1,4 +1,5 @@
 {
+  "description": "GitHubNote, note taking app like Evernote and YoudaoNote, powered by GitHub API.",
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --progress --colors",
