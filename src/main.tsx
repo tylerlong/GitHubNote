@@ -10,7 +10,7 @@ export interface Props {
 class App extends Component<Props> {
   render() {
     const store = this.props.store;
-    return store.ready ? 'hello' : <Spin />;
+    return store.ready ? 'hello' : <Spin size="large" />;
   }
 }
 
