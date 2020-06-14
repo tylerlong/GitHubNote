@@ -1,7 +1,11 @@
 import SubX from 'subx';
 
 const store = SubX.create({
-  hello: 'world'
+  ready: false,
+  hello: 'world',
+  async init() {
+    console.log('init');
+  },
 });
 
 export default store;

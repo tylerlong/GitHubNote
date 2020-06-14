@@ -1,16 +1,16 @@
 import React from 'react';
-import { SubxObj } from 'subx/build/types';
-import { Component } from 'react-subx';
+import {SubxObj} from 'subx/build/types';
+import {Component} from 'react-subx';
+import {Spin} from 'antd';
 
-export interface Props { store: SubxObj; }
+export interface Props {
+  store: SubxObj;
+}
 
 class App extends Component<Props> {
   render() {
     const store = this.props.store;
-    return <>
-      <h1>{store.hello}</h1>
-      <button onClick={e => store.hello = 'clicked'}>click me</button>
-    </>;
+    return store.ready ? 'hello' : <Spin />;
   }
 }
 
