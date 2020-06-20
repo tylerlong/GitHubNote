@@ -2,7 +2,7 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import webpack from 'webpack';
 import path from 'path';
-import dotenv from 'dotenv-override-true';
+import dotenv from 'dotenv';
 
 const config: webpack.Configuration = {
   mode: 'development',

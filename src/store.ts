@@ -11,8 +11,8 @@ const store = SubX.create({
   hello: 'world',
   authorizeUri: new URI('https://github.com/login/oauth/authorize')
     .search({
-      client_id: process.env.GITHUB_CLIENT_ID!,
-      redirect_uri: process.env.GITHUB_AUTHORIZATION_CALLBACK_URL!,
+      client_id: process.env.GITHUB_NOTE_CLIENT_ID!,
+      redirect_uri: process.env.GITHUB_NOTE_AUTHORIZATION_CALLBACK_URL!,
     })
     .toString(),
   async init() {
@@ -22,8 +22,8 @@ const store = SubX.create({
       const r = await axios.post(
         'https://github.com/login/oauth/access_token',
         {
-          client_id: process.env.GITHUB_CLIENT_ID!,
-          client_secret: process.env.GITHUB_CLIENT_SECRET!,
+          client_id: process.env.GITHUB_NOTE_CLIENT_ID!,
+          client_secret: process.env.GITHUB_NOTE_CLIENT_SECRET!,
           code,
         }
       );
