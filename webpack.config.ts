@@ -2,6 +2,7 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import webpack from 'webpack';
 import path from 'path';
+import dotenv from 'dotenv-override-true';
 
 const config: webpack.Configuration = {
   mode: 'development',
@@ -28,6 +29,9 @@ const config: webpack.Configuration = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'GitHubNote',
+    }),
+    new webpack.DefinePlugin({
+      'process.env': JSON.stringify(dotenv.config().parsed),
     }),
   ],
   resolve: {

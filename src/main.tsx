@@ -1,7 +1,7 @@
 import React from 'react';
 import {SubxObj} from 'subx/build/types';
 import {Component} from 'react-subx';
-import {Spin} from 'antd';
+import {Spin, Button} from 'antd';
 
 export interface Props {
   store: SubxObj;
@@ -10,7 +10,15 @@ export interface Props {
 class App extends Component<Props> {
   render() {
     const store = this.props.store;
-    return store.ready ? 'hello' : <Spin size="large" />;
+    return store.ready ? (
+      <a href={store.authorizeUri} target="_parent">
+        <Button size="large" type="primary">
+          Login GitHub
+        </Button>
+      </a>
+    ) : (
+      <Spin size="large" />
+    );
   }
 }
 
