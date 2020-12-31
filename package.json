@@ -16,7 +16,7 @@
     "react-dom": "^16.13.1",
     "react-subx": "^0.7.2",
     "subx": "^0.9.8",
-    "urijs": "^1.19.2"
+    "urijs": "^1.19.4"
   },
   "devDependencies": {
     "@types/node": "^14.0.13",
