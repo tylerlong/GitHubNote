@@ -5,6 +5,7 @@ import axios from 'axios';
 const urlSearchParams = new URLSearchParams(
   new URL(window.location.href).search
 );
+const redirectUri = window.location.origin + window.location.pathname;
 
 const store = SubX.create({
   ready: false,
@@ -12,7 +13,7 @@ const store = SubX.create({
   authorizeUri: new URI('https://github.com/login/oauth/authorize')
     .search({
       client_id: process.env.GITHUB_NOTE_CLIENT_ID!,
-      redirect_uri: process.env.GITHUB_NOTE_AUTHORIZATION_CALLBACK_URL!,
+      redirect_uri: redirectUri,
     })
     .toString(),
   async init() {
