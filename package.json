@@ -2,39 +2,39 @@
   "description": "GitHubNote, note taking app like Evernote and YoudaoNote, powered by GitHub API.",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --progress --colors",
-    "release": "webpack --progress --colors"
+    "start": "webpack serve --progress",
+    "release": "webpack --progress"
   },
   "engines": {
     "node": ">=10.x"
   },
   "dependencies": {
-    "@types/urijs": "^1.19.9",
-    "antd": "^4.3.4",
-    "axios": "^0.19.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-subx": "^0.7.2",
-    "subx": "^0.9.8",
-    "urijs": "^1.19.2"
+    "@types/urijs": "^1.19.14",
+    "antd": "^4.11.2",
+    "axios": "^0.21.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-subx": "^0.8.4",
+    "subx": "^0.9.16",
+    "urijs": "^1.19.5"
   },
   "devDependencies": {
-    "@types/node": "^14.0.13",
-    "@types/react": "^16.9.38",
-    "@types/react-dom": "^16.9.8",
-    "css-loader": "^3.6.0",
+    "@types/node": "^14.14.22",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "css-loader": "^5.0.1",
     "dotenv": "^8.2.0",
-    "eslint-plugin-react": "^7.20.0",
-    "gts": "^2.0.2",
-    "html-webpack-plugin": "^4.3.0",
-    "style-loader": "^1.2.1",
-    "ts-loader": "^7.0.5",
-    "ts-node": "^8.10.2",
-    "typescript": "^3.9.5",
+    "eslint-plugin-react": "^7.22.0",
+    "gts": "^3.1.0",
+    "html-webpack-plugin": "^4.5.1",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.0.14",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3",
     "wait-for-async": "^0.5.0",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0",
-    "yarn-upgrade-all": "^0.5.2"
+    "webpack": "^5.19.0",
+    "webpack-cli": "^4.4.0",
+    "webpack-dev-server": "^3.11.2",
+    "yarn-upgrade-all": "^0.5.4"
   }
 }

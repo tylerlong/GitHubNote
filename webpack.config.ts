@@ -6,7 +6,7 @@ import dotenv from 'dotenv';
 
 const config: webpack.Configuration = {
   mode: 'development',
-  devtool: '#source-map',
+  devtool: 'source-map',
   entry: './src/index.tsx',
   output: {
     path: path.join(__dirname, 'docs'),

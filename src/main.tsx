@@ -1,5 +1,5 @@
 import React from 'react';
-import {SubxObj} from 'subx/build/types';
+import {SubxObj} from 'subx/build/src/types';
 import {Component} from 'react-subx';
 import {Spin, Button} from 'antd';
 
